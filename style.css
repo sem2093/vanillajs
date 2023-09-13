@@ -28,6 +28,50 @@ span#seconds {
 text-size: 70px;
 } 
 
+div#timerbar {
+hieght: 30px;
+width: 100px;
+background: green;
+color:white;
+}
+
+div.wrapper {
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+div.range{
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+p#rangeValue {
+text-size: 30px;
+
+}
+
+input#minutes {
+width: 90%;
+
+}
+
+
+
+div.input{
+border: 1px solid black;
+margin: 5px;
+padding: 30px;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
 .progress-bar {
   width: 60px;
   height: 30px;
