@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Steven Miller</title> 
- <link rel="stylesheet" href="https://sem2093.github.io/portfolio/css/styles.css" />
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
 <link rel="stylesheet" href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
@@ -86,16 +85,68 @@
 </nav>
   </header>
 <main>
-<h2>Selecting Elements</h2>
-<code>getElementById</code>
-<code>getElementsByClassName</code>
-  <code>getElementsByTagName</code>
- <code> querySelector</code>
- <code>querySelectorAll</code>
+<h2>Selecting Elements</h2> 
 
 
+Below I've used <br><code>
+  var time = document.getElementById("clock"); <br>
+  time.innerHTML = new Date(); </code> <br> setting clock ass the text area id.
+<textarea id="clock"></textarea>
+
+Below I've used <code>getELementsBYClassName</code> to select the first three checkboxes by giving them all the same class and set them to all be selected if the fourth checkbox is selected.Go ahead and select the fourth checkbox to see and whatch the first three get selected.
+<input type= "checkbox" class= "lang" value= "Python">React<br/>
+<input type= "checkbox" class= "lang" value= "JavaScript">Node.js<br/>
+<input type= "checkbox" class= "lang" value= "HTML">next.js<br/>
+<input type="checkbox" onclick="check(this)">Select All
+
+Below I used <code>querySelector</code> to inject only the first number into the first text area then I used <code>querySelectorAll</code> to bundle all three into an object to insert to the second text area.
+ <p>1</p><br>
+  <p>2</p><br>
+  <p>3</p><br>
+1.<br>
+<textarea id="one"></textarea><br>
+2.<br>
+<textarea id="three"></textarea>
+
+
+
+Below I used <code>getElementsByTagName</code> to select all <code><td></code>'s into an object and placed them in the text area below the table.
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+<textarea id="values"></textarea>
+  <h2>Modifying Content</h2>
+  Ive used <code>innerHTML</code> in the above examples to insert values into the text areas.
+  Below I've used <code>innerText</code> to select the paragraph and insert it into the text area.
+<p id="par">Here is a paragraph.</p>
+<textarea id=parcon ></textarea>
+  Below I've used <code>textContent</code> to repeat the same task as I did above using <code>innerText</code>.
+  <p id="par2">Here is a paragraph.</p>
+<textarea id=parcon2 ></textarea>
+
+<h2>Changing Attributes</h2>
+Below I'm using <code>setAttribute</code to set the name of a button.
+  <code>button.setAttribute("name", "helloButton");</code>
+
+  <button onclick = "fun()" id = "btn">press</button>  
+ function
+"press button again to clear this message.""
+<div id="txtcon"></div><code>getAttribute</code>
   
-
 
   
 </main>
