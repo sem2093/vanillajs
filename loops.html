@@ -26,16 +26,16 @@
           <a class="nav-link" href="#"><i class="bi bi-code-square"></i>  While Loops</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="bi bi-code-square"></i>  For...Of</a>
+          <a class="nav-link" href="#"><i class="bi bi-code-square"></i>  For...Of Loops</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link" href="#"><i class="bi bi-code-square"></i>  For...In </a>
+          <a class="nav-link" href="#"><i class="bi bi-code-square"></i>  For...In Loops</a>
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#"><i class="bi bi-code-square"></i>  Do...While</a>
+         <a class="nav-link" href="#"><i class="bi bi-code-square"></i>  Do...While Loops</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="bi bi-code-square"></i>  For Await...Of</a>
+          <a class="nav-link" href="#"><i class="bi bi-code-square"></i>  For Await...Of Loops</a>
         </li>
       </ul>
     </div>
@@ -62,7 +62,10 @@ console.log(str);</code>
 <div style="min-height: 120px;">
   <div class="collapse collapse-horizontal" id="collapseWidthExample">
     <div class="card card-body" style="width: 300px;">
-      This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+     <code> for (let i = 0; i < 4; i += 1) {
+  console.log(i);
+}</code>
+
     </div>
   </div>
 </div>
@@ -71,7 +74,7 @@ console.log(str);</code>
 
       <!-------for...in------>
       <div class="container-fluid border border-black mt-3">
-  <h2><i class="bi bi-code-square"></i>  For...In </h2> 
+  <h2><i class="bi bi-code-square"></i>  For...In Loops</h2> 
         <code>const object = { a: 1, b: 2, c: 3 };
 
 for (const property in object) {
@@ -91,7 +94,16 @@ for (const property in object) {
 <div style="min-height: 120px;">
   <div class="collapse collapse-horizontal" id="collapseWidthExample">
     <div class="card card-body" style="width: 300px;">
-      This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+ <code>     const obj = { a: 15, b: 35, c: 45 };
+
+for (const prop in obj) {
+  console.log(`obj.${prop} = ${obj[prop]}`);
+}
+
+// Logs:
+// "obj.a = 15"
+// "obj.b = 35"
+// "obj.c = 45"</code>
     </div>
   </div>
 </div>
@@ -102,7 +114,7 @@ for (const property in object) {
     <div class="col">
       <!-------While------>
       <div class="container-fluid border border-black mt-3">
-<h2><i class="bi bi-code-square"></i>  While</h2>
+<h2><i class="bi bi-code-square"></i>  While Loops</h2>
         <code>  let n = 0;
 while (n < 3) {
   n++;
@@ -116,7 +128,10 @@ console.log(n);</code>
 <div style="min-height: 120px;">
   <div class="collapse collapse-horizontal" id="collapseWidthExample">
     <div class="card card-body" style="width: 300px;">
-      This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+  <code>   while (i < 10) {
+  text += "The number is " + i;
+  i++;
+}</code>  
     </div>
   </div>
 </div>
@@ -143,7 +158,13 @@ console.log(result);
 <div style="min-height: 120px;">
   <div class="collapse collapse-horizontal" id="collapseWidthExample">
     <div class="card card-body" style="width: 300px;">
-      This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+  <code>    let text = "These Docs Rock";
+let i = 0;
+do {
+  text += i + "<br>";
+  i++;
+}
+while (i < 5);</code>
     </div>
   </div>
 </div>
@@ -169,7 +190,15 @@ for (let i of string) {
 <div style="min-height: 120px;">
   <div class="collapse collapse-horizontal" id="collapseWidthExample">
     <div class="card card-body" style="width: 300px;">
-      This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+    <code>  const array1 = ['a', 'b', 'c'];
+
+for (const element of array1) {
+  console.log(element);
+}
+
+// Expected output: "a"
+// Expected output: "b"
+// Expected output: "c"</code> 
     </div>
   </div>
 </div>
@@ -201,7 +230,19 @@ for (let i of string) {
 <div style="min-height: 120px;">
   <div class="collapse collapse-horizontal" id="collapseWidthExample">
     <div class="card card-body" style="width: 300px;">
-      This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+    <code> async function* foo() {
+  yield 1;
+  yield 2;
+}
+
+(async function () {
+  for await (const num of foo()) {
+    console.log(num);
+    // Expected output: 1
+
+    break; // Closes iterator, triggers return
+  }
+})();</code>
     </div>
   </div>
 </div>
