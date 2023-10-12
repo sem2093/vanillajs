@@ -12,9 +12,77 @@
 <body>
   <heading>
 <h1> Loops</h1>
+<!-------for------>
 <h2>For Loops</h2>
+<code>let str = '';
+for (let i = 0; i < 9; i++) {
+  str = str + i;
+}
+console.log(str);</code>
+
+<!-------While------> 
 <h2>While</h2>
+
+<!-------for...of------>
+ <h2>for...of</h2> 
+<code>const array1 = ['a', 'b', 'c'];
+
+for (const element of array1) {
+  console.log(element);
+}
+
+// Expected output: "a"
+// Expected output: "b"
+// Expected output: "c" </code>
+
+<!-------for...in------>
+  <h2> for...in </h2> 
+<code>const object = { a: 1, b: 2, c: 3 };
+
+for (const property in object) {
+  console.log(`${property}: ${object[property]}`);
+}
+
+// Expected output:
+// "a: 1"
+// "b: 2"
+// "c: 3" </code>
+
+
+<!-------Do...While------>
 <h2>Do...While</h2>
+
+<code>let result = '';
+let i = 0;
+
+do {
+  i = i + 1;
+  result = result + i;
+} while (i < 5);
+
+console.log(result);
+ // Expected output: "12345"</code> 
+
+
+<!-------for await...0f------>
+    <h2>for await...of</h2>
+<code>    async function* asyncGenerator() {
+  let i = 0;
+  while (i < 3) {
+    yield i++;
+  }
+}
+
+(async () => {
+  for await (const num of asyncGenerator()) {
+    console.log(num);
+  }
+})();
+// 0
+// 1
+// 2 </code> 
+
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="index.js"></script>
 </body>
