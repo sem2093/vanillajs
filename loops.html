@@ -20,22 +20,22 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-         <a class="nav-link" href="#"><i class="bi bi-code-square"></i>For Loops</a>
+         <a class="nav-link" href="#"><i class="bi bi-code-square"></i>  For Loops</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="bi bi-code-square"></i>While Loops</a>
+          <a class="nav-link" href="#"><i class="bi bi-code-square"></i>  While Loops</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="bi bi-code-square"></i>For...Of</a>
+          <a class="nav-link" href="#"><i class="bi bi-code-square"></i>  For...Of</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link" href="#"><i class="bi bi-code-square"></i>For...In </a>
+          <a class="nav-link" href="#"><i class="bi bi-code-square"></i>  For...In </a>
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#"><i class="bi bi-code-square"></i>Do...While</a>
+         <a class="nav-link" href="#"><i class="bi bi-code-square"></i>  Do...While</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="bi bi-code-square"></i>For Await...Of</a>
+          <a class="nav-link" href="#"><i class="bi bi-code-square"></i>  For Await...Of</a>
         </li>
       </ul>
     </div>
@@ -47,19 +47,31 @@
   <div class="row">
     <div class="col">
       <!-------for------>
-      <div class="container-fluid border border-black">
-<h2><i class="bi bi-code-square"> </i>For Loops</h2>
+      <div class="container-fluid border border-black mt-3">
+<h2><i class="bi bi-code-square"> </i>  For Loops</h2>
         <code>let str = '';
 for (let i = 0; i < 9; i++) {
   str = str + i;
 }
 console.log(str);</code>
+        <p>
+  <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+   <i class="bi bi-clipboard-fill"></i>
+  </button>
+</p>
+<div style="min-height: 120px;">
+  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+    <div class="card card-body" style="width: 300px;">
+      This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+    </div>
+  </div>
+</div>
       </div>
-
+<!-------for------>
 
       <!-------for...in------>
-      <div class="container-fluid border border-black">
-  <h2><i class="bi bi-code-square"></i> For...In </h2> 
+      <div class="container-fluid border border-black mt-3">
+  <h2><i class="bi bi-code-square"></i>  For...In </h2> 
         <code>const object = { a: 1, b: 2, c: 3 };
 
 for (const property in object) {
@@ -71,25 +83,50 @@ for (const property in object) {
 // "b: 2"
 // "c: 3" </code>
 <code>i</code>
+        <p>
+  <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    <i class="bi bi-clipboard-fill"></i>
+  </button>
+</p>
+<div style="min-height: 120px;">
+  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+    <div class="card card-body" style="width: 300px;">
+      This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+    </div>
+  </div>
+</div>
       </div>
+      <!-------for...in------>
  
     </div>
     <div class="col">
       <!-------While------>
-      <div class="container-fluid border border-black">
-<h2><i class="bi bi-code-square"></i>While</h2>
+      <div class="container-fluid border border-black mt-3">
+<h2><i class="bi bi-code-square"></i>  While</h2>
         <code>  let n = 0;
 while (n < 3) {
   n++;
 }
 console.log(n);</code>
+         <p>
+  <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    <i class="bi bi-clipboard-fill"></i>
+  </button>
+</p>
+<div style="min-height: 120px;">
+  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+    <div class="card card-body" style="width: 300px;">
+      This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+    </div>
+  </div>
+</div>
       </div>
-         
+         <!-------While------>
       <!-------Do...While------>
-      <div class="container-fluid border border-black">
-<h2><i class="bi bi-code-square"></i>Do...While</h2>
+      <div class="container-fluid border border-black mt-3">
+<h2><i class="bi bi-code-square"></i>  Do...While</h2>
          <code>let result = '';
-let i = 0;
+let i = 0;  
 
 do {
   i = i + 1;
@@ -98,12 +135,25 @@ do {
 
 console.log(result);
  // Expected output: "12345"</code> 
+        <p>
+  <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    <i class="bi bi-clipboard-fill"></i>
+  </button>
+</p>
+<div style="min-height: 120px;">
+  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+    <div class="card card-body" style="width: 300px;">
+      This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+    </div>
+  </div>
+</div>
       </div>
+        <!-------Do...While------>
     </div>
     <div class="col">
       <!-------For...Of------>
-      <div class="container-fluid border border-black">
- <h2><i class="bi bi-code-square"></i>For...Of</h2> 
+      <div class="container-fluid border border-black mt-3">
+ <h2><i class="bi bi-code-square"></i>  For...Of</h2> 
         <code>// string
 const string = 'code';
 
@@ -111,11 +161,23 @@ const string = 'code';
 for (let i of string) {
     console.log(i);
 }</code>
+        <p>
+  <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+   <i class="bi bi-clipboard-fill"></i>
+  </button>
+</p>
+<div style="min-height: 120px;">
+  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+    <div class="card card-body" style="width: 300px;">
+      This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+    </div>
+  </div>
+</div>
       </div>     
-
+<!-------For...Of------>
       <!-------for await...0f------>
-    <div class="container-fluid border border-black">
-    <h2><i class="bi bi-code-square"></i>For Await...Of</h2>
+    <div class="container-fluid border border-black mt-3">
+    <h2><i class="bi bi-code-square"></i>  For Await...Of</h2>
       <code>    async function* asyncGenerator() {
   let i = 0;
   while (i < 3)
@@ -131,7 +193,20 @@ for (let i of string) {
 // 0
 // 1
 // 2 </code> 
+      <p>
+  <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    <i class="bi bi-clipboard-fill"></i>
+  </button>
+</p>
+<div style="min-height: 120px;">
+  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+    <div class="card card-body" style="width: 300px;">
+      This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
     </div>
+  </div>
+</div>
+    </div>
+<!-------for await of----->
     </div>
   </div>
 </div>
