@@ -18,3 +18,13 @@ do {
 console.log(result);
 // Expected output: "12345"
  
+//for...of
+const array1 = ['a', 'b', 'c'];
+
+for (const element of array1) {
+  console.log(element);
+}
+
+// Expected output: "a"
+// Expected output: "b"
+// Expected output: "c"
