@@ -8,153 +8,89 @@
 <link rel="stylesheet" href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
   </head>
-  <body>
+  <body  class="py-5">
 <header>
-<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+<nav class="navbar fixed-top bg-dark border-bottom border-body" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><i class="bi bi-journal-code"></i>  DOM Manipulation</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="bi bi-house-door-fill"></i>  Return Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-folder-fill"></i>  Selecting Elements
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">getElementById</a></li>
-            <li><a class="dropdown-item" href="#">getElementsByClassName</a></li>
-            <li><a class="dropdown-item" href="#">getElementsByTagName</a></li>
-            <li><a class="dropdown-item" href="#">querySelector</a></li>
-            <li><a class="dropdown-item" href="#">querySelectorAll</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-folder-fill"></i>  Modifying Content 
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">innerHTML</a></li>
-            <li><a class="dropdown-item" href="#">textContent</a></li>
-            <li><a class="dropdown-item" href="#">innerText</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-folder-fill"></i>  Changing Attributes
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">setAttribute</a></li>
-            <li><a class="dropdown-item" href="#">getAttribute</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-folder-fill"></i>  Creating Elements 
-              </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#"> createELement</a>
-              <li><a class="dropdown-item" href="#"> createChild</a>
-                <li><a class="dropdown-item" href="#"> insertBefore</a>
-          </ul> <
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-folder-fill"></i>  Styling Elements 
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">style property</a></li>
-            <li><a class="dropdown-item" href="#">classList</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           <i class="bi bi-folder-fill"></i>  Event Handling
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Add Event Listeners</a></li>
-             </ul>
-        </li>
-      </ul>
-    </div>
+     <a class="navbar-brand" href="index.html">JavaScript</a><span class="navbar-brand mb-0 h1">/ DOM Manipulation</span>
   </div>
 </nav>
   </header>
-<main>
-<h2><i class="bi bi-folder-fill"></i>  Selecting Elements</h2> 
-<ul class="list-group shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-  <li class="list-group-item">getElementById(</li>
-  <li class="list-group-item">getELementsByClassName</li>
-  <li class="list-group-item">querySelector</li>
-  <li class="list-group-item">querySelectorAll</li>
-  <li class="list-group-item">getElementsByTagName</li>
+<main class="p-5">
+<h2>JS/ DOM Manipulation/ Selecting Elements</h2> 
+<ul class="list-group bg-body-tertiary rounded">
+  <li class="list-group-item"><code>getElementById</code></li>
+  <li class="list-group-item"><code>getELementsByClassName</code></li>
+  <li class="list-group-item"><code>querySelector</code></li>
+  <li class="list-group-item"><code>querySelectorAll</code></li>
+  <li class="list-group-item"><code>getElementsByTagName</code></li>
 </ul>
+<button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    <i class="bi bi-code-square"></i>
+  </button>
 
-<p>Below I've used <br><code>
-  <i class="bi bi-file-code-fill"></i>document.getElementById("clock"); 
-  time.innerHTML = new Date(); </code> <br> displaying the date in an Element with the ID clock. .</p> 
-
-
- <i class="bi bi-file-code-fill"></i><code>getELementsByClassName</code> 
-<i class="bi bi-file-code-fill"></i><code>querySelector</code> 
- <i class="bi bi-file-code-fill"></i> <code>querySelectorAll</code> 
-<i class="bi bi-file-code-fill"></i><code>getElementsByTagName</code> 
- 
-
-  <h2><i class="bi bi-folder-fill"></i>  Modifying Content</h2>
+  <h2>JS/ DOM Manipulation/ Modifying Content</h2>
   <ul class="list-group shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-  <li class="list-group-item">innerHTML</li>
-  <li class="list-group-item">innerText</li>
-  <li class="list-group-item">textContent</li>
+  <li class="list-group-item"><code>innerHTML</code></li>
+  <li class="list-group-item"><code>innerText</code></li>
+  <li class="list-group-item"><code>textContent</code></li>
 </ul>
-  Ive used <i class="bi bi-file-code-fill"></i><code>innerHTML</code> in an above example to insert values into the text areas.
-  <i class="bi bi-file-code-fill"></i><code>innerText</code> 
-<i class="bi bi-file-code-fill"></i><code>textContent</code> 
+ <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    <i class="bi bi-code-square"></i>
+  </button>
 
   
-<h2><i class="bi bi-folder-fill"></i>  Changing Attributes</h2>
+<h2>JS/ DOM Manipulation/ Changing Attributes</h2>
   <ul class="list-group shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-  <li class="list-group-item">setAttribute</li>
-  <li class="list-item">getAttribute</li>
+  <li class="list-group-item"><code>setAttribute</code></li>
+  <li class="list-item"><code>getAttribute</code></li>
 </ul>
+  <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    <i class="bi bi-code-square"></i>
+  </button>
 Below I'm using <i class="bi bi-file-code-fill"></i><code>setAttribute</code to set the name of a button.
   <code>button.setAttribute("name", "helloButton");</code>
 <i class="bi bi-file-code-fill"></i><code>getAttribute</code>
 
-<h2><i class="bi bi-folder-fill"></i>  Creating Elements</h2>
+<h2>JS/ DOM Manipulation/ Creating Elements</h2>
   <ul class="list-group shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-  <li class="list-group-item">createElement</li>
-  <li class="list-group-item">createChild</li>
-  <li class="list-group-item">insertBefore</li>
+  <li class="list-group-item"><code>createElement</code></li>
+  <li class="list-group-item"><code>appendChild</code></li>
+  <li class="list-group-item"><code>insertBefore</code></li>
 </ul>
-<i class="bi bi-file-code-fill"></i><code>createElement</code>
-  <i class="bi bi-file-code-fill"></i><code>createChild</code>
-  <i class="bi bi-file-code-fill"></i><code>insertBefore</code>
+<button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    <i class="bi bi-code-square"></i>
+  </button>
 
   
-<h2><i class="bi bi-folder-fill"></i>  Styling Elements</h2>
+<h2>JS/ DOM Manipulation/ Styling Elements</h2>
   <ul class="list-group shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-  <li class="list-group-item">.style</li>
-  <li class="list-group-item">classList</li>
+  <li class="list-group-item"><code>.style</code></li>
+  <li class="list-group-item"><code>classList</code></li>
 </ul>
-  <i class="bi bi-file-code-fill"></i><code>.style</code>
-  <i class="bi bi-file-code-fill"></i><code>classList</code>
+<button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    <i class="bi bi-code-square"></i>
+  </button>
 
   
   
-<h2><i class="bi bi-folder-fill"></i>  Handling EVents</h2>
+<h2>JS/ DOM Manipulation/  Handling EVents</h2>
   <ul class="list-group shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-  <li class="list-group-item">addEventListener</li>
-  <li class="list-group-item">removeEventListener()</li>
+  <li class="list-group-item"><code>addEventListener</code></li>
+  <li class="list-group-item"><code>removeEventListener()</code></li>
 </ul>
-  <i class="bi bi-file-code-fill"></i><code>addEventListener</code>
+  <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    <i class="bi bi-code-square"></i>
+  </button>
+  
 </main>
-
-
+  <footer>
+ <nav class="navbar fixed-bottom bg-dark border-bottom border-body" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"></a>
+  </div>
+</nav>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="index.js"></script>
